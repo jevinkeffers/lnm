@@ -1,0 +1,142 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #fe0012;
+}
+
+.text-danger {
+    color: #fe0012 !important;
+}
+
+.large-horizontal-line {
+    height: 3px;
+    background-color: #fe0012;
+    border: none;
+    width: 20%;
+}
+
+.small-horizontal-line {
+    height: 3px;
+    background-color: #fe0012;
+    border: none;
+    width: 20%;
+}
+
+.black-horizontal-line {
+    height: 1px;
+    background-color: #000;
+    border: none;
+    width: 20%;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.dot {
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .red-dot {
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-bottom: -15px;
+    background-color: #fe0012;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.repair-image {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: #FFF;
+        background-color: #fe0012;
+        background-image: url(../img/auto_repair.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+}
+
+header.masthead {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    color: #FFF;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+    header.masthead .masthead-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.75rem;
+        margin-bottom: 2rem;
+    }
+
+@media (max-width: 600px) {
+    header.masthead {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+        header.masthead .masthead-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 2rem;
+            margin-bottom: 1.5rem;
+        }
+}
+
+
+
+
+
+
+
+
+
+    .slide-right {
+        -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+                animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+    }
+
+ @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
