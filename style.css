@@ -75,8 +75,8 @@ img {
 }
 
 header.masthead {
-    padding-top: 20rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
     text-align: center;
     color: #FFF;
     background-image: url(../img/hero.jpg);
@@ -91,52 +91,38 @@ header.masthead {
         font-weight: 700;
         line-height: 2.75rem;
         margin-bottom: 2rem;
+        float: center;
     }
 
 @media (max-width: 600px) {
     header.masthead {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 10rem;
+        padding-bottom: 15rem;
     }
-    
+
         header.masthead .masthead-heading {
-            font-size: 1.5rem;
+            font-size: 3rem!important;
             font-weight: 700;
-            line-height: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
         }
 }
 
+.slide {
+    position: absolute;
+    left: -600px;
+    width: 600px;
+    padding-left: 0px;
+    padding-top: 0px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
 
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
 
-
-
-
-
-
-
-    .slide-right {
-        -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-                animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-    }
-
- @-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
-  }
-  @keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
-  }
+@keyframes slide {
+    100% { left: 0; }
+}
